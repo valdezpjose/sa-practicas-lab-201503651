@@ -27,15 +27,15 @@ Abrir [http://localhost:3000](http://localhost:3000) para visualizar la aplicaci
 ### Agregar/Modificar usuario
 Para agregar un usuario se debe de completar la informacion del formulario y presionar el boton para agregar, siguiendo el mismo proceso para modificar
 
-![Agregar](D:\1.png) 
+![Agregar](./1.png) 
 
 ### Eliminar/Visualizar usuario
 Para visualizar un usuario simplemente se debe de ingresar su id y presionar el boton de obtener
 
-![Agregar](D:\2.png) 
+![Agregar](./2.png) 
 
 ### Dato de usuario agregado		
 
-![Agregar](D:\3.jpeg) 
+![Agregar](./3.jpeg) 
 
 
