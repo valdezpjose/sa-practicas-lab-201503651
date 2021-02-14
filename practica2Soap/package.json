@@ -1,0 +1,17 @@
+{
+  "name": "practica2soap",
+  "version": "1.0.0",
+  "description": "Este proyecto es un servidor de webservice en nodeJS en el cual se genera un token utilizando JWT y luego se verifica que el mismo token sea correcto",
+  "main": "index.js",
+  "scripts": {
+    "devStart" : "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "soap": "^0.36.0"
+  }
+}

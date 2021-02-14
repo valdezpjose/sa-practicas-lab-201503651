@@ -1,6 +1,6 @@
-# Practica 2
+# Practica 2 SOAP
 
-Este proyecto es un servidor de webservice en nodeJS en el cual se genera un token utilizando JWT y luego se verifica que el mismo token sea correcto
+Este proyecto es un servidor de webservice que consume el servicio [soap](http://www.dneonline.com/calculator.asmx?WSDL) y ejecuta operaciones matematicas
 
 ## Ejecutar el programa
 
@@ -18,41 +18,21 @@ Abrir [http://localhost:3000](http://localhost:3000) para visualizar la aplicaci
 ## Librerias utilizadas
 + [nodemon](https://www.npmjs.com/package/nodemon) 
 + [express](https://expressjs.com/es/)
-+ [JWT](https://jwt.io/)
++ [SOAP](https://www.npmjs.com/package/soap)
 
-## Apis
+## Operaciones
 
-**Nota: Para testear las apis se recomienda el uso de postman**
+**Nota: Para testear las operaciones se recomienda el uso de consola**
 
-### localhost:3000/api/login
-Esta direccion api es un POST que retorna el token generado, en base a los criterios de entrada:
+Los valores iniciales de las operaciones son:
 
-    {     
-     nombre: "Jose Fernando Valdez Perez",
-     carnet: "201503651"             
-    }
-
-Su respuesta tiene la siguiente estructura:
-
-    {     
-     token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Im5vbWJyZSI6Ikpvc2UgRmVybmFuZG8gVmFsZGV6IFBlcmV6IiwiY2FybmV0IjoiMjAxNTAzNjUxIn0sImlhdCI6MTYxMzMxMDcxOCwiZXhwIjoxNjEzMzE0MzE4fQ.VfQtyKhK4Wa783LvXAzKKm1HC_EIu_IVAMEAq9B-oUQ"          
-    }
-
-### localhost:3000/api/posts
-Esta api POST retorna la rspuesa si el token es correcto o no, para enviar el token se debe incluir en los headers (El tiempo de vida del token es de 1 hora):
-    
-     Authorization: Bearer <Token>        
-    
-La respuesta del servidor tiene la siguien estructura:
-
-    {
-    "mensaje": "Token valido",
-    "authData": {
-        "user": {
-            "nombre": "Jose Fernando Valdez Perez",
-            "carnet": "201503651"
-            },
-        "iat": 1613310718,
-        "exp": 1613314318
-        }   
-    }
+    valor1 : 4
+    valor2 : 4
+### Suma
+    Suma  { AddResult: 8 }
+### Resta
+    Resta  { SubtractResult: 0 }
+### Divison
+    Division  { DivideResult: 1 }
+### Multiplacion
+    Multiplicacion  { MultiplyResult: 16 }
